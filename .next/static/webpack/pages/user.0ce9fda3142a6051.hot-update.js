@@ -1,0 +1,95 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("pages/user",{
+
+/***/ "./components/User.tsx":
+/*!*****************************!*\
+  !*** ./components/User.tsx ***!
+  \*****************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"UserComponent\": function() { return /* binding */ UserComponent; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"./node_modules/react/jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _firebase_authentication__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/firebase/authentication */ \"./firebase/authentication.ts\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ \"./node_modules/next/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _utils_notify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/utils/notify */ \"./utils/notify.ts\");\n/* harmony import */ var _WelcomeMessage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./WelcomeMessage */ \"./components/WelcomeMessage.tsx\");\n/* harmony import */ var _WelcomeMessage__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_WelcomeMessage__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\nfunction UserComponent(param) {\n    let { currentUser  } = param;\n    async function sendEmail() {\n        if (currentUser) {\n            const response = await (0,_firebase_authentication__WEBPACK_IMPORTED_MODULE_1__.verifyUserEmail)(currentUser);\n            if (response) {\n                (0,_utils_notify__WEBPACK_IMPORTED_MODULE_3__.notify)(\"An email has been sent to you\");\n            } else {\n                (0,_utils_notify__WEBPACK_IMPORTED_MODULE_3__.notify)(\"Something went wrong\");\n            }\n        }\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"w-screen h-screen bg-white\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"flex flex-col items-center justify-center px-12 pt-40 gap-y-12\",\n            children: [\n                currentUser && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_WelcomeMessage__WEBPACK_IMPORTED_MODULE_4___default()), {\n                    name: currentUser.displayName || \"\"\n                }, void 0, false, {\n                    fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n                    lineNumber: 27,\n                    columnNumber: 25\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"w-full p-8 bg-gray-200 rounded-lg\",\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                        className: \"mb-4 text-xl font-bold\",\n                        children: \"Dashboard\"\n                    }, void 0, false, {\n                        fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n                        lineNumber: 31,\n                        columnNumber: 11\n                    }, this)\n                }, void 0, false, {\n                    fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n                    lineNumber: 30,\n                    columnNumber: 9\n                }, this),\n                currentUser && currentUser.emailVerified && !(0,_firebase_authentication__WEBPACK_IMPORTED_MODULE_1__.verifyIfUserIsEnrolled)(currentUser) && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {\n                    className: \"w-full text-center underline hover:text-black\",\n                    href: \"/mfa\",\n                    children: \"Activate multifactor authentication\"\n                }, void 0, false, {\n                    fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n                    lineNumber: 37,\n                    columnNumber: 11\n                }, this),\n                currentUser && !currentUser.emailVerified && !(0,_firebase_authentication__WEBPACK_IMPORTED_MODULE_1__.verifyIfUserIsEnrolled)(currentUser) && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                    onClick: sendEmail,\n                    className: \"w-full text-center underline hover:text-black\",\n                    children: \"Verify your email\"\n                }, void 0, false, {\n                    fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n                    lineNumber: 43,\n                    columnNumber: 11\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                    onClick: _firebase_authentication__WEBPACK_IMPORTED_MODULE_1__.logout,\n                    className: \"flex items-center justify-center px-6 bg-black rounded-xl h-11\",\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                        className: \"relative text-base font-light text-white\",\n                        children: \"Disconnect\"\n                    }, void 0, false, {\n                        fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n                        lineNumber: 49,\n                        columnNumber: 11\n                    }, this)\n                }, void 0, false, {\n                    fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n                    lineNumber: 48,\n                    columnNumber: 9\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n            lineNumber: 26,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/home/retr0/drives/files/College/Project/MFA - MP/components/User.tsx\",\n        lineNumber: 25,\n        columnNumber: 5\n    }, this);\n}\n_c = UserComponent;\nvar _c;\n$RefreshReg$(_c, \"UserComponent\");\n\n\n;\n    // Wrapped in an IIFE to avoid polluting the global scope\n    ;\n    (function () {\n        var _a, _b;\n        // Legacy CSS implementations will `eval` browser code in a Node.js context\n        // to extract CSS. For backwards compatibility, we need to check we're in a\n        // browser context before continuing.\n        if (typeof self !== 'undefined' &&\n            // AMP / No-JS mode does not inject these helpers:\n            '$RefreshHelpers$' in self) {\n            // @ts-ignore __webpack_module__ is global\n            var currentExports = module.exports;\n            // @ts-ignore __webpack_module__ is global\n            var prevExports = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevExports) !== null && _b !== void 0 ? _b : null;\n            // This cannot happen in MainTemplate because the exports mismatch between\n            // templating and execution.\n            self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.id);\n            // A module can be accepted automatically based on its exports, e.g. when\n            // it is a Refresh Boundary.\n            if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {\n                // Save the previous exports on update so we can compare the boundary\n                // signatures.\n                module.hot.dispose(function (data) {\n                    data.prevExports = currentExports;\n                });\n                // Unconditionally accept an update to this module, we'll check if it's\n                // still a Refresh Boundary later.\n                // @ts-ignore importMeta is replaced in the loader\n                module.hot.accept();\n                // This field is set when the previous version of this module was a\n                // Refresh Boundary, letting us know we need to check for invalidation or\n                // enqueue an update.\n                if (prevExports !== null) {\n                    // A boundary can become ineligible if its exports are incompatible\n                    // with the previous exports.\n                    //\n                    // For example, if you add/remove/change exports, we'll want to\n                    // re-execute the importing modules, and force those components to\n                    // re-render. Similarly, if you convert a class component to a\n                    // function, we want to invalidate the boundary.\n                    if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)) {\n                        module.hot.invalidate();\n                    }\n                    else {\n                        self.$RefreshHelpers$.scheduleUpdate();\n                    }\n                }\n            }\n            else {\n                // Since we just executed the code for the module, it's possible that the\n                // new exports made it ineligible for being a boundary.\n                // We only care about the case when we were _previously_ a boundary,\n                // because we already accepted this update (accidental side effect).\n                var isNoLongerABoundary = prevExports !== null;\n                if (isNoLongerABoundary) {\n                    module.hot.invalidate();\n                }\n            }\n        }\n    })();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL1VzZXIudHN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBNEY7QUFFL0Q7QUFDVztBQUNNO0FBTXZDLFNBQVNNLGNBQWMsS0FBc0IsRUFBRTtRQUF4QixFQUFFQyxZQUFXLEVBQVMsR0FBdEI7SUFDNUIsZUFBZUMsWUFBWTtRQUN6QixJQUFJRCxhQUFhO1lBQ2YsTUFBTUUsV0FBVyxNQUFNUCx5RUFBZUEsQ0FBQ0s7WUFFdkMsSUFBSUUsVUFBVTtnQkFDWkwscURBQU1BLENBQUM7WUFDVCxPQUFPO2dCQUNMQSxxREFBTUEsQ0FBQztZQUNULENBQUM7UUFDSCxDQUFDO0lBQ0g7SUFFQSxxQkFDRSw4REFBQ007UUFBSUMsV0FBVTtrQkFDYiw0RUFBQ0Q7WUFBSUMsV0FBVTs7Z0JBQ1pKLDZCQUFlLDhEQUFDRix3REFBY0E7b0JBQUNPLE1BQU1MLFlBQVlNLFdBQVcsSUFBSTs7Ozs7OzhCQUdqRSw4REFBQ0g7b0JBQUlDLFdBQVU7OEJBQ2IsNEVBQUNHO3dCQUFHSCxXQUFVO2tDQUF5Qjs7Ozs7Ozs7Ozs7Z0JBS3hDSixlQUFlQSxZQUFZUSxhQUFhLElBQUksQ0FBQ2QsZ0ZBQXNCQSxDQUFDTSw4QkFDbkUsOERBQUNKLGtEQUFJQTtvQkFBQ1EsV0FBVTtvQkFBZ0RLLE1BQUs7OEJBQU87Ozs7OztnQkFLN0VULGVBQWUsQ0FBQ0EsWUFBWVEsYUFBYSxJQUFJLENBQUNkLGdGQUFzQkEsQ0FBQ00sOEJBQ3BFLDhEQUFDVTtvQkFBT0MsU0FBU1Y7b0JBQVdHLFdBQVU7OEJBQWdEOzs7Ozs7OEJBS3hGLDhEQUFDTTtvQkFBT0MsU0FBU2xCLDREQUFNQTtvQkFBRVcsV0FBVTs4QkFDakMsNEVBQUNRO3dCQUFLUixXQUFVO2tDQUEyQzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUtyRSxDQUFDO0tBM0NlTCIsInNvdXJjZXMiOlsid2VicGFjazovL19OX0UvLi9jb21wb25lbnRzL1VzZXIudHN4Pzg1YmMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgbG9nb3V0LCB2ZXJpZnlJZlVzZXJJc0Vucm9sbGVkLCB2ZXJpZnlVc2VyRW1haWwgfSBmcm9tIFwiQC9maXJlYmFzZS9hdXRoZW50aWNhdGlvblwiO1xyXG5pbXBvcnQgeyBVc2VyIH0gZnJvbSBcIkBmaXJlYmFzZS9hdXRoXCI7XHJcbmltcG9ydCBMaW5rIGZyb20gXCJuZXh0L2xpbmtcIjtcclxuaW1wb3J0IHsgbm90aWZ5IH0gZnJvbSBcIkAvdXRpbHMvbm90aWZ5XCI7XHJcbmltcG9ydCBXZWxjb21lTWVzc2FnZSBmcm9tIFwiLi9XZWxjb21lTWVzc2FnZVwiO1xyXG5cclxudHlwZSBQcm9wcyA9IHtcclxuICBjdXJyZW50VXNlcjogVXNlciB8IG51bGw7XHJcbn07XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gVXNlckNvbXBvbmVudCh7IGN1cnJlbnRVc2VyIH06IFByb3BzKSB7XHJcbiAgYXN5bmMgZnVuY3Rpb24gc2VuZEVtYWlsKCkge1xyXG4gICAgaWYgKGN1cnJlbnRVc2VyKSB7XHJcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgdmVyaWZ5VXNlckVtYWlsKGN1cnJlbnRVc2VyKTtcclxuXHJcbiAgICAgIGlmIChyZXNwb25zZSkge1xyXG4gICAgICAgIG5vdGlmeSgnQW4gZW1haWwgaGFzIGJlZW4gc2VudCB0byB5b3UnKTtcclxuICAgICAgfSBlbHNlIHtcclxuICAgICAgICBub3RpZnkoJ1NvbWV0aGluZyB3ZW50IHdyb25nJyk7XHJcbiAgICAgIH1cclxuICAgIH1cclxuICB9XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cInctc2NyZWVuIGgtc2NyZWVuIGJnLXdoaXRlXCI+XHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcHgtMTIgcHQtNDAgZ2FwLXktMTJcIj5cclxuICAgICAgICB7Y3VycmVudFVzZXIgJiYgPFdlbGNvbWVNZXNzYWdlIG5hbWU9e2N1cnJlbnRVc2VyLmRpc3BsYXlOYW1lIHx8ICcnfSAvPn1cclxuICAgICAgICBcclxuICAgICAgICB7LyogRGlzcGxheSBkYXNoYm9hcmQgZWxlbWVudHMgKi99XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ3LWZ1bGwgcC04IGJnLWdyYXktMjAwIHJvdW5kZWQtbGdcIj5cclxuICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJtYi00IHRleHQteGwgZm9udC1ib2xkXCI+RGFzaGJvYXJkPC9oMz5cclxuICAgICAgICAgIHsvKiBQbGFjZSB5b3VyIGRhc2hib2FyZCBlbGVtZW50cyBoZXJlICovfVxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICAgIFxyXG4gICAgICAgIHsvKiBDb25kaXRpb25hbCByZW5kZXJpbmcgYmFzZWQgb24gdXNlciBzdGF0dXMgKi99XHJcbiAgICAgICAge2N1cnJlbnRVc2VyICYmIGN1cnJlbnRVc2VyLmVtYWlsVmVyaWZpZWQgJiYgIXZlcmlmeUlmVXNlcklzRW5yb2xsZWQoY3VycmVudFVzZXIpICYmIChcclxuICAgICAgICAgIDxMaW5rIGNsYXNzTmFtZT1cInctZnVsbCB0ZXh0LWNlbnRlciB1bmRlcmxpbmUgaG92ZXI6dGV4dC1ibGFja1wiIGhyZWY9XCIvbWZhXCI+XHJcbiAgICAgICAgICAgIEFjdGl2YXRlIG11bHRpZmFjdG9yIGF1dGhlbnRpY2F0aW9uXHJcbiAgICAgICAgICA8L0xpbms+XHJcbiAgICAgICAgKX1cclxuICAgICAgICBcclxuICAgICAgICB7Y3VycmVudFVzZXIgJiYgIWN1cnJlbnRVc2VyLmVtYWlsVmVyaWZpZWQgJiYgIXZlcmlmeUlmVXNlcklzRW5yb2xsZWQoY3VycmVudFVzZXIpICYmIChcclxuICAgICAgICAgIDxidXR0b24gb25DbGljaz17c2VuZEVtYWlsfSBjbGFzc05hbWU9XCJ3LWZ1bGwgdGV4dC1jZW50ZXIgdW5kZXJsaW5lIGhvdmVyOnRleHQtYmxhY2tcIj5cclxuICAgICAgICAgICAgVmVyaWZ5IHlvdXIgZW1haWxcclxuICAgICAgICAgIDwvYnV0dG9uPlxyXG4gICAgICAgICl9XHJcblxyXG4gICAgICAgIDxidXR0b24gb25DbGljaz17bG9nb3V0fSBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBweC02IGJnLWJsYWNrIHJvdW5kZWQteGwgaC0xMVwiPlxyXG4gICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwicmVsYXRpdmUgdGV4dC1iYXNlIGZvbnQtbGlnaHQgdGV4dC13aGl0ZVwiPkRpc2Nvbm5lY3Q8L3NwYW4+XHJcbiAgICAgICAgPC9idXR0b24+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxufVxyXG4iXSwibmFtZXMiOlsibG9nb3V0IiwidmVyaWZ5SWZVc2VySXNFbnJvbGxlZCIsInZlcmlmeVVzZXJFbWFpbCIsIkxpbmsiLCJub3RpZnkiLCJXZWxjb21lTWVzc2FnZSIsIlVzZXJDb21wb25lbnQiLCJjdXJyZW50VXNlciIsInNlbmRFbWFpbCIsInJlc3BvbnNlIiwiZGl2IiwiY2xhc3NOYW1lIiwibmFtZSIsImRpc3BsYXlOYW1lIiwiaDMiLCJlbWFpbFZlcmlmaWVkIiwiaHJlZiIsImJ1dHRvbiIsIm9uQ2xpY2siLCJzcGFuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/User.tsx\n"));
+
+/***/ }),
+
+/***/ "./components/WelcomeMessage.tsx":
+/*!***************************************!*\
+  !*** ./components/WelcomeMessage.tsx ***!
+  \***************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+
+
+;
+    // Wrapped in an IIFE to avoid polluting the global scope
+    ;
+    (function () {
+        var _a, _b;
+        // Legacy CSS implementations will `eval` browser code in a Node.js context
+        // to extract CSS. For backwards compatibility, we need to check we're in a
+        // browser context before continuing.
+        if (typeof self !== 'undefined' &&
+            // AMP / No-JS mode does not inject these helpers:
+            '$RefreshHelpers$' in self) {
+            // @ts-ignore __webpack_module__ is global
+            var currentExports = module.exports;
+            // @ts-ignore __webpack_module__ is global
+            var prevExports = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevExports) !== null && _b !== void 0 ? _b : null;
+            // This cannot happen in MainTemplate because the exports mismatch between
+            // templating and execution.
+            self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.id);
+            // A module can be accepted automatically based on its exports, e.g. when
+            // it is a Refresh Boundary.
+            if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {
+                // Save the previous exports on update so we can compare the boundary
+                // signatures.
+                module.hot.dispose(function (data) {
+                    data.prevExports = currentExports;
+                });
+                // Unconditionally accept an update to this module, we'll check if it's
+                // still a Refresh Boundary later.
+                // @ts-ignore importMeta is replaced in the loader
+                module.hot.accept();
+                // This field is set when the previous version of this module was a
+                // Refresh Boundary, letting us know we need to check for invalidation or
+                // enqueue an update.
+                if (prevExports !== null) {
+                    // A boundary can become ineligible if its exports are incompatible
+                    // with the previous exports.
+                    //
+                    // For example, if you add/remove/change exports, we'll want to
+                    // re-execute the importing modules, and force those components to
+                    // re-render. Similarly, if you convert a class component to a
+                    // function, we want to invalidate the boundary.
+                    if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)) {
+                        module.hot.invalidate();
+                    }
+                    else {
+                        self.$RefreshHelpers$.scheduleUpdate();
+                    }
+                }
+            }
+            else {
+                // Since we just executed the code for the module, it's possible that the
+                // new exports made it ineligible for being a boundary.
+                // We only care about the case when we were _previously_ a boundary,
+                // because we already accepted this update (accidental side effect).
+                var isNoLongerABoundary = prevExports !== null;
+                if (isNoLongerABoundary) {
+                    module.hot.invalidate();
+                }
+            }
+        }
+    })();
+
+
+/***/ })
+
+});
